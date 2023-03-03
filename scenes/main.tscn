@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://main scene pictures/forest-game-background-free-vector.webp" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 33, 46.25 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 28, 239.75 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 246 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 539.5, 55.5 )
+
+[node name="main" type="Node2D"]
+position = Vector2( 18, -4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = 6.0
+margin_right = 1004.0
+margin_bottom = 605.0
+color = Color( 0.788235, 0.984314, 1, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 517, 313 )
+scale = Vector2( 0.559375, 0.881106 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 519, 434 )
+shape = SubResource( 2 )
+
+[node name="left border" type="StaticBody2D" parent="."]
+position = Vector2( -18, 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left border"]
+position = Vector2( -59, 245.25 )
+shape = SubResource( 3 )
+
+[node name="right border" type="StaticBody2D" parent="."]
+position = Vector2( -17, 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right border"]
+position = Vector2( 1066, 255 )
+shape = SubResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 504, 562 )
+shape = SubResource( 1 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -17, 4 )
