@@ -66,4 +66,5 @@ text = "Exit"
 flat = true
 
 [connection signal="pressed" from="VBoxContainer/playButton" to="." method="_on_playButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/optionsButton" to="." method="_on_optionsButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/exitButton" to="." method="_on_exitButton_pressed"]
