@@ -55,7 +55,7 @@ flat = true
 margin_top = 24.0
 margin_right = 126.0
 margin_bottom = 44.0
-text = "options"
+text = "instructions"
 flat = true
 
 [node name="exitButton" type="Button" parent="VBoxContainer"]
