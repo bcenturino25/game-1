@@ -23,3 +23,5 @@ margin_bottom = 202.2
 margin_right = 167.0
 margin_bottom = 20.0
 text = "return to main"
+
+[connection signal="pressed" from="VBoxContainer/mainscreen" to="." method="_on_mainscreen_pressed"]
