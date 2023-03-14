@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/main menu.gd" type="Script" id=1]
-[ext_resource path="res://menu pictures/Screen Shot 2023-03-06 at 9.01.57 AM.png" type="Texture" id=2]
+[ext_resource path="res://Screen Shot 2023-03-13 at 12.34.42 PM.png" type="Texture" id=2]
 
 [node name="menu" type="Node"]
 script = ExtResource( 1 )
 
 [node name="MainScreenBackground" type="Sprite" parent="."]
-position = Vector2( 513.937, 301.247 )
-scale = Vector2( 0.358539, 0.374689 )
+position = Vector2( 513, 294.5 )
+scale = Vector2( 0.592075, 0.66342 )
 texture = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -48,21 +48,21 @@ margin_bottom = 35.0
 [node name="playButton" type="Button" parent="VBoxContainer"]
 margin_right = 126.0
 margin_bottom = 20.0
-text = "play"
+text = "Play"
 flat = true
 
 [node name="optionsButton" type="Button" parent="VBoxContainer"]
 margin_top = 24.0
 margin_right = 126.0
 margin_bottom = 44.0
-text = "instructions"
+text = "Instructions"
 flat = true
 
 [node name="exitButton" type="Button" parent="VBoxContainer"]
 margin_top = 48.0
 margin_right = 126.0
 margin_bottom = 68.0
-text = "exit"
+text = "Exit"
 flat = true
 
 [connection signal="pressed" from="VBoxContainer/playButton" to="." method="_on_playButton_pressed"]
